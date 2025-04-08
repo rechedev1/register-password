@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+    <title>Pagina de registro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="banner-container">
+        <div id="layer-banner">
+          <h1>Seja bem-vindo</h1>
+          <p>
+            Estamos felizes em ter você aqui. Crie sua conta para acessar o
+            sistema e aproveitar todos os recursos disponíveis com segurança e
+            praticidade.
+          </p>
+        </div>
+      </div>
+      <!-- Registrar -->
+      <div id="register-container">
+        <h2>Crie sua conta</h2>
+        <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+        <!-- Nome -->
+        <div class="form-control">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Digite o seu nome" />
+        </div>
+        <!-- Email -->
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Digite o seu e-mail" />
+        </div>
+        <!-- Senha -->
+        <div class="form-control">
+          <label for="passwrord">Senha</label>
+          <input
+            type="password"
+            id="passwrord"
+            placeholder="Digite a sua senha"
+          />
+        </div>
+        <!-- Gerar senha aleátoria -->
+        <div id="generate-container">
+          <p>
+            Quer ajuda para criar uma senha segura?
+            <span id="generate-password">Clique aqui.</span>
+          </p>
+          <h4></h4>
+          <!-- Senha gerada-->
+        </div>
+        <!-- Confirmar senha -->
+        <div class="form-control">
+          <label for="confirm-password">Confirmar senha</label>
+          <input
+            type="text"
+            id="confirm-password"
+            placeholder="Confirme sua senha"
+          />
+        </div>
+        <!-- Finalizar cadastro -->
+        <button type="submit">Cadastrar</button>
+      </div>
+    </div>
+  </body>
+</html>
