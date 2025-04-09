@@ -15,41 +15,114 @@ body {
 
 .container {
   display: flex;
-  height: 400px;
+  height: auto;
   width: auto;
-  gap: 1rem;
 }
 
 /* Banner */
 #banner-container {
-  width: 50%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    160deg,
-    rgb(42, 32, 175) 0%,
-    rgb(46, 111, 207) 35%,
-    rgb(7, 8, 88) 100%
-  );
-  opacity: 0.7;
+  width: 350px;
+  background-image: url(/img/9580633.jpg);
+  background-position: center;
+  background-size: cover;
   border: 1px solid #111;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-#layer-banner {
+/* Registrar */
+#register-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 2rem;
-  height: 100%;
+  gap: 0.9rem;
+  background-color: #16132e;
+  width: 60%;
+  padding: 1rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-#layer-banner h1 {
+#register-container h2 {
+  color: #fff;
   text-align: center;
+  font-size: 1.8rem;
+}
+
+#register-container p {
+  color: #aaa;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.form-control label {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 13px;
+  outline: none;
   color: #fff;
 }
 
-#layer-banner p {
-  width: 250px;
+/* Impedir o background de preenchimento padrão */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 transparent inset !important; /* substitua pela cor de fundo do seu input */
+  -webkit-text-fill-color: #fff !important; /* cor do texto */
+  transition: background-color 5000s ease-in-out 2s;
+}
+
+/* Criar uma senha */
+#generate-container {
+  margin: 0.5rem 0;
+}
+
+#generate-container p {
+  color: #bbb;
+  font-size: 0.8rem;
   text-align: center;
+  margin: 0;
+}
+
+#generate-container span {
+  color: #eee;
+  cursor: pointer;
+}
+
+#generate-container h4 {
+  text-align: center;
+  margin-top: 0.5rem;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
   color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+  display: none;
+}
+
+#register-container button[type="submit"] {
+  padding: 0.4rem;
+  background-color: #7c82f7;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem 0;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+#register-container button[type="submit"]:hover {
+  background-color: #eaccf8;
+  cursor: pointer;
+  transition: 0.2s;
 }
